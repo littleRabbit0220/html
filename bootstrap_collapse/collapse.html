@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>accordion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      #accordion .card-header.collapsed:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f067";
+        background-color: #ffffff;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50px;
+        float: right;
+        font-weight: 700;
+      }
+      #accordion .card-header {
+        cursor: pointer;
+      }
+      .mcis-text-bold {
+        font-family: "HelveticaNeue-Bold", sans-serif;
+        font-weight: 700;
+      }
+      #accordion .card-header:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f068";
+        float: right;
+        background-color: #ffffff;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50px;
+        font-weight: 700;
+      }
+      #accordion .card-body {
+        background-color: #d6d8da;
+      }
+      #expand-all-btn {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="p-2">
+    <span id="expand-all-btn">+ EXPAND ALL</span><br />
+    <div id="accordion">
+      <div class="card mb-1">
+        <div
+          class="card-header mcis-text-bold"
+          data-toggle="collapse"
+          data-target="#collapse1"
+          aria-expanded="true"
+          aria-controls="collapse1"
+          id="heading0"
+        >
+          Pillar 1: Insurance Made Accessible
+        </div>
+
+        <div
+          id="collapse1"
+          class="collapse show"
+          aria-labelledby="heading1"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <p>
+              Offer an active engagement model wherein our customers are aware
+              of:
+            </p>
+
+            <ul>
+              <li>
+                Multi-channel options and accessibility for purchase and enquiry
+              </li>
+              <li>Where and how to provide feedback, and to complaint</li>
+              <li>
+                For more details, please click <a href="#Pillar1">here</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div
+          class="card-header mcis-text-bold collapsed"
+          data-toggle="collapse"
+          data-target="#collapse2"
+          aria-expanded="true"
+          aria-controls="collapse2"
+          id="heading1"
+        >
+          Pillar 2: Know Our Customer
+        </div>
+
+        <div
+          id="collapse2"
+          class="collapse"
+          aria-labelledby="heading2"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <p>
+              To understand our customer profile adequately which enables us to:
+            </p>
+
+            <ul>
+              <li>
+                Know and anticipate our customer&rsquo;s needs and preference.
+              </li>
+              <li>
+                Ask for requisite information and documents to best advise our
+                customer.
+              </li>
+              <li>Offer suitable products and services.</li>
+              <li>
+                For more details, please click
+                <a href="#Pillar2">here<a></a></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div
+          class="card-header mcis-text-bold collapsed"
+          data-toggle="collapse"
+          data-target="#collapse3"
+          aria-expanded="true"
+          aria-controls="collapse3"
+          id="heading2"
+        >
+          Pillar 3: Timely, Transparent & Efficient Service
+        </div>
+
+        <div
+          id="collapse3"
+          class="collapse"
+          aria-labelledby="heading3"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <p>
+              Deliver a seamless service wherein our customers are aware of:
+            </p>
+
+            <ul>
+              <li>Our responsibilities towards the customers.</li>
+              <li>
+                Expected service standard and time taken to deliver these
+                services, i.e. time taken to answer enquiries / resolve
+                complaints.
+              </li>
+              <li>
+                Where and how to obtain information required i.e. product
+                features and costs.
+              </li>
+              <li>
+                For more details, please click <a href="#Pillar3">here</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div
+          class="card-header mcis-text-bold collapsed"
+          data-toggle="collapse"
+          data-target="#collapse4"
+          aria-expanded="true"
+          aria-controls="collapse4"
+          id="heading3"
+        >
+          Pillar 4: Fair, Timely & Transparent Claims Settlement Process
+        </div>
+
+        <div
+          id="collapse4"
+          class="collapse"
+          aria-labelledby="heading4"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            <p>
+              Deliver a seamless claims processing and settlement experience
+              wherein our customers are aware of:
+            </p>
+
+            <ul>
+              <li>
+                Procedures, documentation and steps including various options
+                (if any) for first notification of loss in an event of a claim.
+              </li>
+              <li>
+                Expected service standard for claims processing and specific
+                time taken for each step within the claims processing stages.
+              </li>
+              <li>
+                Various redress mechanisms for unsatisfactory claims payment.
+              </li>
+              <li>
+                For more details, please click <a href="#Pillar4">here</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script language="javascript">
+      let toggle = true;
+      const expandAllBtn = document.getElementById("expand-all-btn");
+      expandAllBtn.addEventListener("click", function () {
+        const accordion = document.getElementById("accordion");
+        const headerElements = accordion.querySelectorAll(".card-header");
+        const contentElements = accordion.querySelectorAll(".collapse");
+        if (toggle === true) {
+          for (let i = 0; i < headerElements.length; i++) {
+            headerElements[i].classList.add("active");
+            contentElements[i].classList.remove("collapsed");
+            contentElements[i].classList.add("show");
+          }
+          toggle = false;
+        } else {
+          for (let i = 0; i < headerElements.length; i++) {
+            headerElements[i].classList.remove("active");
+            contentElements[i].classList.add("collapsed");
+            contentElements[i].classList.remove("show");
+          }
+          toggle = true;
+        }
+      });
+    </script>
+  </body>
+</html>
